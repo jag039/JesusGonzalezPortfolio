@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animated Navigation Bar</title>
+    <style>
+        body {
+            background-color: #1a1a1a;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        #navigation {
+            display: flex;
+            align-items: center;
+            position: relative;
+        }
+
+        #navigation button {
+            background-color: #4b4b8b;
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 20px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            margin: 0 5px;
+        }
+
+        #navigation button:hover {
+            background-color: #5a5ad0;
+        }
+
+        #navigation button.active {
+            background-color: #7575d8;
+        }
+
+        #nav-bar {
+            position: absolute;
+            bottom: 0;
+            height: 4px;
+            background-color: #7575d8;
+            transition: all 0.3s ease;
+        }
+
+        @keyframes slideIn {
+            0% {
+                transform: translateX(-100%);
+            }
+            100% {
+                transform: translateX(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <source src="webdev.mp4" type="video/mp4" />
+    <nav id="navigation">
+        <button id="aboutButton">About</button>
+        <button id="experienceButton">Experience</button>
+        <button id="projectsButton">Projects</button>
+        <button id="educationButton">Education</button>
+        <button id="contactButton">Contact Me</button>
+    </nav>
+
+    <script>
+        const buttons = document.querySelectorAll('#navigation button');
+        const navBar = document.getElementById('nav-bar');
+
+        function updateNavBar(button) {
+            const buttonRect = button.getBoundingClientRect();
+            const navRect = document.getElementById('navigation').getBoundingClientRect();
+            navBar.style.width = `${buttonRect.width}px`;
+            navBar.style.left = `${buttonRect.left - navRect.left}px`;
+        }
+
+        buttons.forEach(button => {
+            button.addEventListener('click', () => {
+                buttons.forEach(btn => btn.classList.remove('active'));
+                button.classList.add('active');
+                updateNavBar(button);
+                button.style.animation = 'none';
+                button.offsetHeight; // Trigger reflow
+                button.style.animation = 'slideIn 0.5s forwards';
+            });
+        });
+
+        // Initialize the nav bar position
+        updateNavBar(document.querySelector('#navigation button.active') || buttons[0]);
+    </script>
+</body>
+</html>

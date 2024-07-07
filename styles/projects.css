@@ -1,0 +1,102 @@
+#project {
+  z-index: 99;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  align-items: center;
+}
+
+#Pinfo {
+  max-width: 900px;
+  flex-grow: 1.5;
+  min-width: 290px;
+  min-height: 290px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 16px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 0 15px rgba(255, 255, 255, 0.25);
+  margin: 16px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+#Pinfo > p{
+  margin-bottom: 0;
+}
+#Pinfo > ul{
+  flex-grow: 1;
+}
+#links{
+  display: flex;
+  justify-content: space-around;
+}
+#links > a{
+  color: white;
+  transition: text-shadow 0.2s ease-in-out;
+}
+#links > a:hover{
+  cursor: pointer;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.9),
+               0 0 20px rgba(0, 0, 0, 0.7),
+               0 0 30px rgba(0, 0, 0, 0.6);
+}
+
+#pName {
+  font-size: 25px;
+}
+#pTool {
+  font-size: 15px;
+  color: rgb(182, 182, 182);
+  padding-left: 10px;
+}
+
+#vis {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 16px;
+}
+
+#vis img {
+  min-width: 400px;
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 0 15px rgba(255, 255, 255, 0.25);
+}
+
+#vis img:hover {
+  transform: scale(1.05); /* Slightly scale up the image on hover */
+}
+
+@media (width<905px) {
+  #project {
+    z-index: 99;
+    display: flex;
+    flex-direction: column;
+  }
+  #vis img {
+    min-width: 290px;
+  }
+}
+
+#Pinfo:hover {
+  background-color: #fff;
+  transform: translateY(-8px);
+}
+#Pinfo:hover p{
+  color: black !important;
+}
+#Pinfo:hover ul{
+  color: black;
+}
+#Pinfo:hover > p >  #pTool{
+  color: #777;
+}
+#Pinfo:hover > #links > a {
+  color:black !important;
+}

@@ -1,0 +1,94 @@
+#edu {
+  z-index: 99;
+  flex-grow: 1;
+  min-width: 290px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 16px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1),
+              0 0 15px rgba(255, 255, 255, 0.25);
+  margin: 16px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+#eduInfo{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+#eduInfo > ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  margin: 16px 0;
+  color: white;
+  border-right: 1px solid white;
+}
+
+#eduInfo > ul li {
+  margin-bottom: 8px;
+}
+
+#eduInfo > div{
+  padding-left: 20px;
+  margin: 16px 0;
+  color: white;
+}
+
+#breh,#eduInfo > div > h3{
+  margin-top: 0;
+}
+
+#eduInfo > div > p{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+#eduInfo > div > p > span > span{
+  color: rgb(191, 191, 191);
+  font-weight: bold;
+}
+
+@media (width<905px){
+  #eduInfo{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: none;
+  }
+  #eduInfo > ul{
+    color: white;
+    border-bottom: 1px solid white;
+    border-right: none;
+    padding-bottom: 20px;
+  }
+  #edu:hover #eduInfo > ul {
+    border-bottom: 1px solid black;
+    border-right: none !important;
+  }
+}
+
+#edu:hover {
+  background-color: #fff;
+  transform: translateY(-8px);
+}
+#edu:hover #top{
+  color: black !important;
+}
+#edu:hover ul{
+  color: black;
+}
+#edu:hover #position{
+  color: #555;
+}
+#edu:hover #brother,#edu:hover #eduInfo > div > p{
+  color:black;
+}
+#edu:hover #eduInfo > div > p > span > span{
+  color: #777;
+}
+#edu:hover #eduInfo > ul {
+  border-right: 1px solid black;
+}

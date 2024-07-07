@@ -1,0 +1,117 @@
+/* Navigation bar */
+#nav {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  right: auto;
+  bottom: auto;
+  left: auto;
+  z-index: 1000;
+  width: 100%;
+}
+
+#toolBar{
+  height: 3em;
+  width: 100%;
+  margin: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  justify-items: center;
+  align-items: center;
+  background-color: rgb(25, 48, 70);
+}
+
+#toolBar > a {
+  z-index: 1;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-size: 2.75vw;
+  transition: transform 0.3s ease;
+}
+
+#toolBar > a:hover {
+  text-decoration: underline;
+  transform: scale(1.2);
+}
+
+#indicator{
+  position: absolute;
+  height: 100%;
+  width: 20%;
+  background-color: rgb(19, 25, 40);
+  top: 0;
+  left: 0;
+  transition: transform 0.3s ease; 
+}
+
+#indicator::before{
+  content: '';
+  position: absolute;
+  height: 100%;
+  left: -1px;
+  width: 1.8vw;
+  background-color: rgb(25, 48, 70);
+  border-top-right-radius: 33px;
+  border-bottom-right-radius: 33px;
+}
+
+#indicator::after{
+  content: '';
+  position: absolute;
+  height: 100%;
+  right: -1px;
+  width: 1.8vw;
+  background-color: rgb(25, 48, 70);
+  border-top-left-radius: 33px;
+  border-bottom-left-radius: 33px;
+}
+
+#toolBar > a:nth-child(1).active ~ #indicator{
+  transform: translateX(0vw);
+}
+#toolBar > a:nth-child(2).active ~ #indicator{
+  transform: translateX(calc(100vw/5));
+}
+#toolBar > a:nth-child(3).active ~ #indicator{
+  transform: translateX(calc((100vw/5)*2));
+}
+#toolBar > a:nth-child(4).active ~ #indicator{
+  transform: translateX(calc((100vw/5)*3));
+}
+#toolBar > a:nth-child(5).active ~ #indicator{
+  transform: translateX(calc((100vw/5)*4));
+}
+
+.active {
+  background-color: rgb(229, 229, 229);
+  border-radius: 24px;
+  padding: 0 8px 0 8px;
+  transition: background-color 0.5s ease-in-out;
+  color: black !important;
+}
+
+@media (width<700px) {
+  #toolBar > a {
+    font-size: 20px;
+  }
+}
+@media (width<650px) {
+  #toolBar > a {
+    font-size: 18px;
+  }
+}
+@media (width<600px) {
+  #toolBar > a {
+    font-size: 16px;
+  }
+}
+@media (width<550px) {
+  #toolBar > a {
+    font-size: 14px;
+  }
+}
+@media (width<450px) {
+  #toolBar > a {
+    font-size: 11px;
+  }
+}

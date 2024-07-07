@@ -1,0 +1,89 @@
+/* Experience */
+#cards {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#card {
+  z-index: 2;
+  flex-grow: 1;
+  min-width: 290px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 16px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1),
+              0 0 15px rgba(255, 255, 255, 0.25);
+  max-width: 450px;
+  margin: 16px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+#card:hover {
+  background-color: #fff;
+  transform: translateY(-8px);
+}
+#card:hover #top{
+  color: black !important;
+}
+#card:hover ul{
+  color: black;
+}
+#card:hover #position{
+  color: #555;
+}
+#card:hover #timestamp{
+  color: #777;
+}
+
+#top {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+  color: white
+}
+
+#company {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 16px;
+}
+
+#top p {
+  margin: 0;
+}
+
+#Company {
+  display: block;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+#position {
+  display: block;
+  color: rgb(182, 182, 182);
+}
+
+#card > ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  margin: 16px 0;
+  flex-grow: 1;
+  color: white;
+}
+
+#card > ul li {
+  margin-bottom: 8px;
+}
+
+#timestamp {
+  text-align: right;
+  color: rgb(182, 182, 182);
+  font-size: 0.9em;
+}
