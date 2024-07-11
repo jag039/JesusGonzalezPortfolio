@@ -44,7 +44,7 @@ export default function CheckoutPage() {
   return (
     <Layout>
       {!selectedProducts.length ? (
-        <div>No items in your shopping cart</div>
+        <div className="text-red-600">No items in your shopping cart</div>
       ) : (
         productsInfos.map(productInfo => (
 
@@ -85,13 +85,13 @@ export default function CheckoutPage() {
             <h3 className="grow font-bold text-gray-400">Delivery:</h3>
             <h3 className="font-bold">${deliveryPrice}</h3>
           </div>
-          <div className="flex my-3 border-t border-dashed border-emerald-500 pt-3">
+          <div className="flex my-3 border-t border-dashed border-red-600 pt-3">
             <h3 className="grow font-bold text-gray-400">Total:</h3>
             <h3 className="font-bold">${total}</h3>
           </div>
         </div>
           <input type="hidden" name="products" value={selectedProducts.join(',')}/>
-          <button type="submit" className="bg-emerald-500 p-5 text-white px-5 w-full rounded-xl font-bold my-4 shadow-xl shadow-emerald-500 hover:bg-emerald-400 hover:shadow-emerald-400 transition-all">Pay ${total}</button>
+          <button type="submit" className="bg-red-600 p-5 text-white px-5 w-full rounded-xl font-bold my-4 shadow-xl shadow-red-950 hover:shadow-red-500 transition-all">Pay ${total}</button>
       </form>
       
     </Layout>    

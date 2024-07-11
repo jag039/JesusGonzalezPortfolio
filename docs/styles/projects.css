@@ -45,6 +45,7 @@
 
 #pName {
   font-size: 25px;
+  min-width:fit-content;
 }
 #pTool {
   font-size: 15px;
@@ -99,4 +100,9 @@
 }
 #Pinfo:hover > #links > a {
   color:black !important;
+}
+
+#Pinfo > p{
+  display: flex;
+  align-items: center;
 }

@@ -2,6 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
+html{
+  font-family: 'Star Wars', sans-serif;
+}
 body{
   background-color: #000;
 }
@@ -30,4 +33,13 @@ animation: zoom 16s alternate infinite;
   100%{
       transform: scale(1.5);
   }
+}
+
+#glow {
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0, 0, 255, 0.1),
+              0 0 20px rgba(0, 0, 255, 0.4),
+              0 0 30px rgba(0, 0, 255, 0.6),
+              0 0 40px rgba(0, 0, 255, 0.8);
 }
