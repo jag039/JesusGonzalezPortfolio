@@ -10,4 +10,9 @@ Welcome to The Galactic Store, your destination for all things Star Wars! This e
 
 Please note that this application is a project, developed with passion for Star Wars and an interest in next application with api integration.
 
+# Application Architecture Overview
+
+This project uses MongoDB Atlas for database management, fetching product data using `getServerSideProps` in `pages/index.js`. Products are retrieved via `initMongoose` and `findAllProducts` in `lib/mongoose.js` and rendered on the `Home` component. The `Product` component manages product display and updates cart state through `ProductsContextProvider`, using `useLocalStorageState` for persistence. Cart updates are handled by `addProduct` in `components/Product.js`, reflected in the `CheckoutPage`, managed by `moreOfThisProduct` and `lessOfThisProduct`, and rendered in the `Footer` component.
+
+
 
