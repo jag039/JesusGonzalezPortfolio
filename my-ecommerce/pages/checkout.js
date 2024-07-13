@@ -58,11 +58,11 @@ export default function CheckoutPage() {
               <div className="flex">
                 <div className="grow">${productInfo.price}</div>
                 <div>
-                  <button onClick={() => lessOfThisProduct(productInfo._id)} className="bg-red-400 text-white px-2 rounded-xl w-7">-</button>
-                  <span className="px-2">
+                  <button onClick={() => lessOfThisProduct(productInfo._id)} className="bg-red-600 text-white px-2 rounded-xl w-7">-</button>
+                  <span className="px-2 text-white">
                     {selectedProducts.filter(id => id === productInfo._id).length}
                   </span>
-                  <button onClick={() => moreOfThisProduct(productInfo._id)} className="bg-emerald-400 text-white px-2 rounded-xl w-7">+</button>
+                  <button onClick={() => moreOfThisProduct(productInfo._id)} className="bg-blue-700 text-white px-2 rounded-xl w-7">+</button>
                 </div>
               </div>
             </div>
