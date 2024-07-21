@@ -104,5 +104,5 @@
 
 #Pinfo > p{
   display: flex;
-  align-items: center;
+  align-items:center;
 }
