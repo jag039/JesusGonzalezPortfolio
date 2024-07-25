@@ -24,8 +24,8 @@ I am passionate about web development and machine learning. Currently pursuing a
 - [GitHub Repository](https://github.com/jag039/Calorie_Tracker_Project/blob/main/README.md)
 
 ## Contact Me
-- LinkedIn: [LinkedIn Profile](https://www.linkedin.com/in/jesus-gonzalez-j6)
-- Email: tgwld304@gmail.com
-- GitHub: [GitHub Profile](https://github.com/jag039/JesusGonzalezPortfolio/)
+- [LinkedIn Profile](https://www.linkedin.com/in/jesus-gonzalez-j6)
+- tgwld304@gmail.com
+- [GitHub Profile](https://github.com/jag039/JesusGonzalezPortfolio/)
   
 Feel free to explore my projects and get in touch!
