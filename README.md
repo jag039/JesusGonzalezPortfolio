@@ -7,7 +7,7 @@ I am passionate about web development and machine learning. Currently pursuing a
 
 ## Links
 - [Portfolio Website](https://jag039.github.io/JesusGonzalezPortfolio/)
-- [Resume]()
+- [Resume](JesusGonzalezResume.pdf)
 
 ## Projects
 
