@@ -15,6 +15,14 @@ I am passionate about web development and machine learning. Currently pursuing a
 - [Demo](https://cse110-sp24-group9.github.io/CSE110-Project/source/pages/JournalApp.html)
 - [GitHub Repository](https://github.com/cse110-sp24-group9/CSE110-Project)
 
+#### The Galactic Store
+- [Demo](https://my-ecommerce-eta.vercel.app/)
+- [GitHub Repository](https://github.com/jag039/JesusGonzalezPortfolio/blob/main/my-ecommerce/README.md)
+
+#### My Calorie Log
+- [Demo](https://my-calorie-log.vercel.app/)
+- [GitHub Repository](https://github.com/jag039/Calorie_Tracker_Project/blob/main/README.md)
+
 ## Contact Me
 - LinkedIn: [LinkedIn Profile](https://www.linkedin.com/in/jesus-gonzalez-j6)
 - Email: tgwld304@gmail.com
