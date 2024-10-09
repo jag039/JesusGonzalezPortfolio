@@ -23,6 +23,9 @@ I am passionate about web development and machine learning. Currently pursuing a
 - [Demo](https://my-calorie-log.vercel.app/)
 - [GitHub Repository](https://github.com/jag039/Calorie_Tracker_Project/blob/main/README.md)
 
+#### Book Recommender System
+- [GitHub Repository](https://github.com/jag039/book-recommender/blob/main/README.md)
+
 ## Contact Me
 - [LinkedIn Profile](https://www.linkedin.com/in/jesus-gonzalez-j6)
 - tgwld304@gmail.com
