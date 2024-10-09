@@ -25,6 +25,15 @@
 #Pinfo > p{
   margin-bottom: 0;
 }
+
+@media (width<905px) {
+  #Pinfo > p{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0;
+  }
+}
+
 #Pinfo > ul{
   flex-grow: 1;
 }
